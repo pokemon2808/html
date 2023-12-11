@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Game</title>
+    <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="listgame.css">
+        <link rel="stylesheet" href="all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <p>NIGTHCORE STORE</p>
+            </div>
+            <ul class="navbar">
+                <li><a href="project04.html" class="active">BERANDA</a></li>
+                <li><a href="listgame.html">LIST GAME</a></li>
+                <li><a href="keranjang.html">KERANJANG</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="kategori.html">KATEGORI</a></li>
+            </ul>
+            <button type="button" id="btn"><s class="fas fa-play"></s>BELANJA SEKARANG</button>
+        </header>
+        <h1>LIST GAME</h1>
+
+        <ul>
+          <li>
+            <h2>Red Dead Redemption 2</h2>
+            <span>Kategori: Aksi-Petualangan</span>
+            <img src="red redetm.png" alt="Red Dead Redemption 2" width="200">
+            <p>Kisah epik kehidupan di Amerika pada awal era modern.</p>
+            <p>Harga: Rp. 650.000</p>
+            <i href="keranjang.html" onclick="addToCart('Red Dead Redemption 2', 650000)">Beli Sekarang</i>
+          </li>
+        
+          <li>
+            <h2>The Witcher 3: Wild Hunt</h2>
+            <span>Kategori: Aksi-RPG</span>
+            <img src="wicher.png" alt="The Witcher 3: Wild Hunt" width="200">
+            <p>Permainan berburu monster dalam dunia terbuka yang luas.</p>
+            <p>Harga: Rp. 700.000</p>
+            <i href="keranjang.html" onclick="addToCart('The Witcher 3: Wild Hunt', 700000)">Beli Sekarang</i>
+          </li>
+        
+          <li>
+            <h2>Assassin's Creed Odyssey</h2>
+            <span>Kategori: Aksi-Petualangan</span>
+            <img src="assassin2.jpg" alt="Assassin's Creed Odyssey" width="200">
+            <p>Mulai petualangan epik di Yunani kuno.</p>
+            <p>Harga: Rp. 510.000</p>
+            <i href="keranjang.html" onclick="addToCart('Assassins Creed Odyssey', 510000)">Beli Sekarang</i>
+          </li>
+        
+          <li>
+            <h2>God of War</h2>
+            <span>Kategori: Aksi-Petualangan</span>
+            <img src="god of war.png" alt="God of War" width="200">
+            <p>Ikuti Kratos, mantan dewa Yunani, dalam pencarian di mitologi Norse.</p>
+            <p>Harga: Rp. 570.000</p>
+            <i href="keranjang.html" onclick="addToCart('God of War', 570000)">Beli Sekarang</i>
+          </li>
+        
+          <li>
+            <h2>Minecraft</h2>
+            <span>Kategori: Sandbox</span>
+            <img src="minecraft.jpg" alt="Minecraft" width="200">
+            <p>Bangun dan jelajahi dunia kotak milikmu sendiri.</p>
+            <p>Harga: Rp. 210.000</p>
+            <i href="keranjang.html" onclick="addToCart('Minecraft', 210000)">Beli Sekarang</i>
+          </li>
+        
+          <li>
+            <h2>Fallout 4</h2>
+            <span>Kategori: Aksi-RPG</span>
+            <img src="fallout 4.jpg" alt="Fallout 4" width="200">
+            <p>Bertahan hidup dan jelajahi tanah tandus pasca-apokaliptik.</p>
+            <p>Harga: Rp. 440.000</p>
+            <i href="keranjang.html" onclick="addToCart('Fallout 4', 440000)">Beli Sekarang</i>
+          </li>
+        
+          <li>
+            <h2>Overwatch</h2>
+            <span>Kategori: Tembak-Menembak Orang Pertama</span>
+            <img src="overwatch.webp" alt="Overwatch" width="200">
+            <p>Permainan tembak-menembak multipemain tim dengan pahlawan unik.</p>
+            <p>Harga: Rp. 300.000</p>
+            <i href="keranjang.html" onclick="addToCart('Overwatch', 300000)">Beli Sekarang</i>
+          </li>
+        
+          <li>
+            <h2>Horizon Zero Dawn</h2>
+            <span>Kategori: Aksi-RPG</span>
+            <img src="horizon.jpg" alt="Horizon Zero Dawn" width="200">
+            <p>Jelajahi dunia yang indah pasca-apokaliptik dengan makhluk-makhluk robot.</p>
+            <p>Harga: Rp. 120.000</p>
+            <i href="keranjang.html" onclick="addToCart('Horizon Zero Dawn', 120000)">Beli Sekarang</i>
+          </li>
+        
+          <li>
+            <h2>Destiny 2</h2>
+            <span>Kategori: Tembak-Menembak Daring</span>
+            <img src="destiny.png" alt="Destiny 2" width="200">
+            <p>Tim dengan Guardian lainnya untuk membela kota terakhir yang aman.</p>
+            <p>Harga: Gratis dengan pembelian dalam permainan</p>
+            <i href="keranjang.html" onclick="addToCart('Destiny 2', 0)">Beli Sekarang</i>
+          </li>
+        
+          <li>
+            <h2>Cyberpunk 2077</h2>
+            <span>Kategori: Aksi-RPG</span>
+            <img src="cyverpunk.jpg" alt="Cyberpunk 2077" width="200">
+            <p>Merasakan diri dalam masa depan dystopian di Night City.</p>
+            <p>Harga: Rp. 900.000</p>
+            <i href="keranjang.html" onclick="addToCart('Cyberpunk 2077', 900000)">Beli Sekarang</i>
+          </li>
+
+          <li>
+            <h2>Stray</h2>
+            <span>Kategori: petualang, teka-teki</span>
+            <img src="stray.jpg" alt="stray" width="200">
+            <p>Merasakan diri dalam masa depan dystopian di Night City.</p>
+            <p>Harga: Rp. 569.000</p>
+            <i href="keranjang.html" onclick="addToCart('Stray', 569000)">Beli Sekarang</i>
+          </li>
+
+          <li>
+            <h2>Jumanji</h2>
+            <span>Kategori: Aksi-RPG</span>
+            <img src="jumanji.jpg" alt="jumanji" width="200">
+            <p>Merasakan labirin dari game.</p>
+            <p>Harga: Rp. 456.000</p>
+            <i href="keranjang.html" onclick="addToCart('Jumanji', 465000)">Beli Sekarang</i>
+          </li>
+
+          <li>
+            <h2>PES 2023</h2>
+            <span>Kategori: Sepakbola</span>
+            <img src="pes23.jpg" alt="pes23" width="200">
+            <p>dapatkan pemain dan klub andalan kalian.</p>
+            <p>Harga: Rp. 123.000</p>
+            <i href="keranjang.html" onclick="addToCart('PES 2023', 123000)">Beli Sekarang</i>
+          </li>
+
+          <li>
+            <h2>Harvest Moon </h2>
+            <span>Kategori: Sepakbola</span>
+            <img src="harvest.jpg" alt="harvest moon" width="200">
+            <p>ternak dan bertanam sambil sosialisasi dengan masyarakat.</p>
+            <p>Harga: Rp. 178.000</p>
+            <i href="keranjang.html" onclick="addToCart('Harvest Moon', 178000)">Beli Sekarang</i>
+          </li>
+
+          <li>
+            <h2>Spiderman</h2>
+            <span>Kategori: adventure,action</span>
+            <img src="spider1.webp" alt="spiderman" width="200">
+            <p>bantu selamatkan pacar Anda.</p>
+            <p>Harga: Rp. 180.000</p>
+            <i href="keranjang.html" onclick="addToCart('Spiderman', 180000)">Beli Sekarang</i>
+          </li>
+        </ul>
+        <script src="app.js"></script>
+</body>
+</html>

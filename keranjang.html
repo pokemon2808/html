@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang</title>
+    <link rel="icon" href="controller.png" type="image/x-icon">
+    <link rel="stylesheet" href="keranjang.css">
+        <link rel="stylesheet" href="all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <p>NIGTHCORE STORE</p>
+            </div>
+            <ul class="navbar">
+                <li><a href="project04.html" class="active">BERANDA</a></li>
+                <li><a href="listgame.html">LIST GAME</a></li>
+                <li><a href="keranjang.html">KERANJANG</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="kategori.html">KATEGORI</a></li>
+       
+            </ul>
+            <button type="button" id="btn"><i class="fas fa-play"></i>BELANJA SEKARANG</button>
+        </header>
+        <h1>Keranjang Belanja</h1>
+        <ul id="cart"></ul>
+
+        <script>
+            // Fungsi untuk menambahkan item ke keranjang belanja
+            function addToCart(productName, price) {
+                // Buat elemen baru untuk item yang akan ditambahkan
+                const cartItem = document.createElement("li");
+                cartItem.textContent = `${productName} - Harga: Rp. ${price}`;
+
+                // Tambahkan item ke dalam keranjang
+                document.getElementById("cart").appendChild(cartItem);
+            }
+        </script>
+    </div>
+</body>
+</html>
